@@ -1,0 +1,96 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height:100vh;
+  background-color: rgb(35, 39, 47);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.menubar{
+  width:100%;
+  height:10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.description{
+  text-align: justify;
+  padding:2vmax;
+  color:white;
+}
+
+.menubarItem{
+  width:9%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  padding: 0 1vmax;
+  border-radius: 3vmax;
+}
+.menubarItem a{
+  text-decoration: none;
+  color: white;
+}
+.menubarItem a:hover{
+  color: rgb(88 196 220);
+}
+.descriptionHeading{
+  color:rgb(88 196 220);
+  text-align: center;
+}
+
+.orderFontStyle{
+  font-weight: bold;
+  font-size:larger;
+}
+.orderFontStyle ul{
+  font-weight: normal;
+  list-style: disc;
+  line-height: 2.5vmax;
+}
+mark{
+  background-color: #555;
+  color: white;
+}
+.codeWindow{
+  background-color: #555;
+  padding:1vmax;
+  text-wrap:wrap;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  .logoText{
+    display: none;
+  }
+
+  .menubar{
+    width:100vw;
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+  }
+  .menubarItem{
+    width:100%;
+    border-radius: 0;
+  }
+  .description{
+    /* display: none; */
+    width:100%;
+    display: inline-block;
+    padding: 5px 10px; 
+  }
+}
