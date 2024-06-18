@@ -1,32 +1,53 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+// import {BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 export const Main = () => {
   return (
     <div className='menubar'>
             <div className='menubarItem'>
-                <a href='/component'>Component</a>
+                {/*   */}
+                    <Link to="/component">Component</Link>
+                {/*   */}
+
             </div>
             <div className='menubarItem'>
-                <a href='/dom'>DOM</a>
+                              
+                <Link to='/dom'>dom</Link>
+             
             </div>
             <div className='menubarItem'>
-                <a href='/JSX'>JSX</a> 
+                              
+                <Link to='/JSX'>JSX</Link>
+             
             </div>
             <div className='menubarItem'>
-                <a href='/node-js'>Node JS</a> 
+                 
+                    <Link to='/node-js'>Node JS</Link>
+                 
             </div>
             <div className='menubarItem'>
-                <a href='/npm-package'>NPM Package</a> 
+                 
+                    <Link to='/npm-package'>NPM Package</Link>
+                 
             </div>
             <div className='menubarItem'>
-                <a href='/routing'>Rounting</a> 
+                 
+                    <Link to='/routing'>Rounting</Link>
+                 
             </div>
             <div className='menubarItem'>
-                <a href='/v8-engine'>V8 Engine</a> 
+                 
+                    <Link to='v8-engine'>V8 Engine</Link>
+                 
             </div>
             <div className='menubarItem'>
-                <a href='/virtual-dom'>Virtual DOM</a> 
+                 
+                    <Link to='/virtual-dom'>Virtual DOM</Link>
+                 
             </div>
     </div>
   )
 }
+
